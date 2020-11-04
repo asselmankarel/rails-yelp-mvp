@@ -13,6 +13,13 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="navbar bg-light">
+    <%= link_to 'Home', restaurants_path %>
+    <%= link_to 'Add new restaurant', new_restaurant_path %>
+    </div>
+    
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
